@@ -219,7 +219,7 @@ def approve(owner,spender,amount):
         raise Exception("address length error")
     if CheckWitness(owner) == False:
         return False
-    if amount > balanceOf(owner) or amount < 0:
+    if amount < 0:
         return False
 
     key = concat(concat(APPROVE_PREFIX,owner),spender)
