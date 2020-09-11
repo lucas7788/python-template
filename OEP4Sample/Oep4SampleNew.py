@@ -136,8 +136,8 @@ def totalSupply():
 
 def addTotalSupply(amt):
     """
-    additional issue.
-    :param number of additional issues.
+    add totalSupply.
+    :param number of add totalSupply.
     :return: True or raise exception.
     """
     assert (CheckWitness(OWNER))
