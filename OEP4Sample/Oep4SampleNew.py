@@ -13,14 +13,14 @@ ApprovalEvent = RegisterAction("approval", "owner", "spender", "amount")
 
 ctx = GetContext()
 
-NAME = 'MyToken'
-SYMBOL = 'MYT'
+NAME = 'QCASH'
+SYMBOL = 'QC'
 DECIMALS = 8
 FACTOR = 100000000
 OWNER = Base58ToAddress("ASgMW2759gafs1auUJoS4c1dcsG3zB74Mg")
 ZERO_ADDRESS = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
 # OWNER = bytearray(b'\x61\x6f\x2a\x4a\x38\x39\x6f\xf2\x03\xea\x01\xe6\xc0\x70\xae\x42\x1b\xb8\xce\x2d')
-TOTAL_AMOUNT = 1000000000
+TOTAL_AMOUNT = 200000000
 BALANCE_PREFIX = bytearray(b'\x01')
 APPROVE_PREFIX = b'\x02'
 SUPPLY_KEY = 'TotalSupply'
