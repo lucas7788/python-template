@@ -122,14 +122,14 @@ def decimals():
     """
     :return: the decimals of the token
     """
-    return DECIMALS
+    return DECIMALS + 0
 
 
 def totalSupply():
     """
     :return: the total supply of the token
     """
-    return Get(ctx, SUPPLY_KEY)
+    return Get(ctx, SUPPLY_KEY) + 0
 
 
 def balanceOf(account):
@@ -139,8 +139,8 @@ def balanceOf(account):
     """
     if len(account) != 20:
         raise Exception("address length error")
-    return Get(ctx,concat(BALANCE_PREFIX,account))
-
+    return Get(ctx,concat(BALANCE_PREFIX,account)) + 0
+ 
 
 def transfer(from_acct,to_acct,amount):
     """
@@ -267,4 +267,4 @@ def allowance(owner,spender):
     :return: the allowed amount of tokens
     """
     key = concat(concat(APPROVE_PREFIX,owner),spender)
-    return Get(ctx,key)
+    return Get(ctx,key) + 0
